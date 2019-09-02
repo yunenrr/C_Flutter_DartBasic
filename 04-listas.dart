@@ -1,18 +1,31 @@
-void main() {
+void main(){
+  /// Se declara una lista dinámica.
+  List numeros = [1,2,3,4,5];
   
+  // Se imprime en consola la lista
+  print(numeros);
   
-  List<int> numeros = [1,2,3,4,5];
-  print( numeros );
-  
+  // Se agrega un número a la lista.
   numeros.add(6);
-  print( numeros );
   
+  // Se agrega un texto a la lista dinámica
+  numeros.add('Hola Mundo');
   
-  // Tamaño fijo
+  // Se imprime en consola la lista
+  print(numeros);
+  
+  /// Se declra una lista de enteros.
+  List <int> numeroEnteros = [1,2,3,4,5];
+  
+  // Se imprime en consola la lista de números enteros.
+  print(numeroEnteros);
+  
+  /// Se declara una lista dinámica de longitud máxima 10. Dicha longitud no va a variar nunca.
   List masNumeros = List(10);
-  print( masNumeros );
-//   masNumeros.add(1); Esto no es correcto
-  masNumeros[0] = 1;
-  print( masNumeros );
   
+  /// Se asigna un valor a la posición uno.
+  masNumeros[0] = 1;
+  
+  // Se imprime en consola la lista de más números.
+  print(masNumeros);
 }
