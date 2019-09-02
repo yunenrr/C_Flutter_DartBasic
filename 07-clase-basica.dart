@@ -27,12 +27,18 @@ class Heroe{
   /// Constructor
   /// Se le indica que el nombre es opcional
   /// Son argumentos con nombre.
-  Heroe({String nombre = 'Sin nombre', String poder}){
-    this.nombre = nombre;
-    this.poder = poder;
-  }
+  // Heroe({String nombre = 'Sin nombre', String poder}){
+  //   this.nombre = nombre;
+  //   this.poder = poder;
+  // }
+
+  /// Se simplifica el método costructor.
+  Heroe({this.nombre = 'Sin nombre', this.poder});
   
   /// Se sobreescibre método toString.
   /// Cuando se ocupa un primer una variable con caracter se implementa el: ${}.
-  String toString() => 'Nombre: ${this.nombre} - Poder: ${this.poder}';
+  // String toString() => 'Nombre: ${this.nombre} - Poder: ${this.poder}';
+  
+  // Se simplifica el método de retornar el mensaje.
+  String toString() => 'Nombre: $nombre - Poder: $poder';
 }
