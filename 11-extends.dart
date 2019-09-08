@@ -1,29 +1,26 @@
-void main() {
-  
+void main(){
   final superman = new Heroe();
   superman.nombre = 'Clark Kent';
   
-  final luthor = new Villano();
-  luthor.nombre  = 'Lex Luthor';
-  
-  
+  final luthor = new Heroe();
+  luthor.nombre = 'Lex Luthor';
 }
 
-
-
-abstract class Personaje {
+/// Se crea la clase Personaje porque la clase Heroe y Villano compartían ciertos atributos.
+/// Se indica como abstracta para que no se puedan crear instancias directas de esta clase.
+abstract class Personaje{
   String poder;
   String nombre;
 }
 
-
-class Heroe extends Personaje { 
-	
+/// La palabra reservada "extends" indica que la clase Heroe hereda de la clase Personaje.
+/// Al ser por "extends" la clase ya posee los atributos y métodos de la clase padre.
+class Heroe extends Personaje{
   int valentia;
-
 }
 
-class Villano extends Personaje {
-
+/// La palabra reservada "extends" indica que la clase Villano hereda de la clase Personaje.
+/// Al ser por "extends" la clase ya posee los atributos y métodos de la clase padre.
+class Villano extends Personaje{
   int maldad;
 }
